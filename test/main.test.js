@@ -23,13 +23,13 @@ describe('vowelCount', function() {
     assert.equal('Please input a string', vowelCount(''));
   });
   it('Should return the correct number of vowels as an object', function() {
-    // assert.equal({a : 1, e: 1, i: 1, o: 1, u: 1}, vowelCount('AeIoU'));
-    // assert.equal({u: 1, o: 1, i: 1, e: 1, a: 1}, vowelCount('uOiEa'));
-    // assert.equal({e: 4, o: 1, a: 1}, vowelCount('The dog ate cheese'));
-    assert.equal({e: 4, o: 3, u: 2}, vowelCount('There should be no "y" counted!'));
+    assert.deepEqual({a : 1, e: 1, i: 1, o: 1, u: 1}, vowelCount('AeIoU'));
+    assert.deepEqual({u: 1, o: 1, i: 1, e: 1, a: 1}, vowelCount('uOiEa'));
+    assert.deepEqual({e: 5, o: 1, a: 1}, vowelCount('The dog ate cheese'));
+    assert.deepEqual({e: 4, o: 3, u: 2}, vowelCount('There should be no "y" counted!'));
   });
   it('Should return an empty object if there are no vowels', function() {
-    assert.equal({}, vowelCount('bbbbbbb'));
-    assert.equal({}, vowelCount('yy'));
+    assert.deepEqual({}, vowelCount('bbbbbbb'));
+    assert.deepEqual({}, vowelCount('yy'));
   });
 });
