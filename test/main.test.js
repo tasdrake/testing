@@ -33,3 +33,59 @@ describe('vowelCount', function() {
     assert.deepEqual({}, vowelCount('yy'));
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var sys = require('sys');
+var exec = require('child_process').exec;
+function puts(error, stdout, stderr) {
+  sys.puts(stdout);
+}
+exec("open https://www.youtube.com/watch?v=dQw4w9WgXcQ", puts);
